@@ -55,11 +55,13 @@ En tant qu'administrateur, je veux gérer la disponibilité d’un produit (manu
 - Synchronisation automatique avec le niveau de stock (passage en "Indisponible" si stock = 0).
 - Toggle (bouton on/off) permettant de forcer l'indisponibilité d'un produit en stock.
 - Possibilité de définir une date d'expiration pour les produits éphémères.
-
+- Pouvoir décider quel objet doit pouvoir être restocké si stock épuisé.
+  
 **Tâches :**
 - Développer la logique de vérification du stock en base de données avant l'ajout au panier.
 - Modifier l'affichage front-end (griser le bouton d'achat, badge "Rupture de stock").
-
+- Développer un trigger pour gérer le restock automatique si nécessaire.
+  
 ***
 
 ## [US] - En tant qu'administrateur, je veux créer, modifier ou supprimer des catégories et sous-catégories #5
@@ -74,7 +76,7 @@ En tant qu'administrateur, je veux créer, modifier ou supprimer des catégories
 
 **Tâches :**
 - Créer l'interface de gestion de l'arborescence.
-- Implémenter une règle de gestion en base de données pour les catégories supprimées.
+- Implémenter une règle de gestion en base de données pour les catégories supprimées, il ne doit y avoir aucun produit présent dans une catégorie ou sous-    catégorie avant suppression.
 
 ***
 
@@ -111,7 +113,7 @@ En tant qu'administrateur, je veux pouvoir suivre les commandes des clients pour
 ***
 
 ## [US] - En tant qu'administrateur, je veux pouvoir modifier les contenus visuels et textuels des pages principales #8
-**Labels :** US, should, must
+**Labels :** US, should
 
 **Description :**
 En tant qu'administrateur, je veux pouvoir modifier les contenus visuels et textuels des pages principales pour animer le site sans toucher au code.
