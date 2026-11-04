@@ -76,8 +76,8 @@ En tant que client, je veux créer un compte afin de pouvoir passer commande.
 * Champs obligatoires (Nom, prénom, Num, email…).
 
 **Tâches :**
-* Interface de création de compte.
-* Enregistrement dans la base de données.
+* Créer une Interface de création de compte.
+* Enregistrement des données du client dans la base de données.
 
 ***
 
@@ -92,7 +92,7 @@ En tant que client je veux ajouter un pack au panier pour pouvoir profiter de la
 * Appliquer les réductions si un pack est ajouté au panier.
 
 **Tâches :**
-* Interface de panier.
+* Créer une Interface de panier.
 * Affichage des réductions disponibles et appliquées.
 
 ***
