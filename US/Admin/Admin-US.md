@@ -1,4 +1,4 @@
-## [US] - En tant qu'administrateur, je veux pouvoir éditer le site web
+## [US] - En tant qu'administrateur, je veux pouvoir éditer le site web #1
 **Labels :** US, must
 
 **Description :**
@@ -13,7 +13,7 @@ En tant qu’administrateur, je souhaite pouvoir éditer la page du catalogue af
 
 ***
 
-## [US] - En tant qu'administrateur, je veux pouvoir éditer l’information sur les clients
+## [US] - En tant qu'administrateur, je veux pouvoir éditer l’information sur les clients #2
 **Labels :** US, must
 
 **Description :**
