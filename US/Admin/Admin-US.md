@@ -32,16 +32,18 @@ En tant qu’administrateur, je souhaite pouvoir éditer les informations des cl
 **Labels :** US, must
 
 **Description :**
-En tant qu'administrateur, je veux pouvoir ajouter, modifier ou supprimer un produit afin de maintenir le catalogue à jour.
+En tant qu'administrateur, je veux pouvoir ajouter, modifier ou supprimer un produit afin de maintenir le catalogue à jour et pouvoir ajouter une réduction.
 
 **Critères d'acceptation :**
 - Présence d'un formulaire pour renseigner les détails (nom, description, prix, image, catégorie).
 - Possibilité de modifier un produit existant depuis une liste.
 - Confirmation requise avant la suppression définitive d'un produit.
+- Dans l'onglet de modification, pouvoir appliquer une réduction au produit.
 
 **Tâches :**
 - Créer l'interface du catalogue côté administration.
 - Mettre en place les requêtes SQL (Insert, Update, Delete) correspondantes.
+- % de réduction applicable et trouvable sur la BD
 
 ***
 
