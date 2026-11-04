@@ -9,6 +9,7 @@ En tant que visiteur, je veux rechercher des produits avec un filtre afin de voi
 
 **Tâches :**
 * Requêtes sur la base de données.
+* Créer un onglet avec les filtres.
 
 ***
 
