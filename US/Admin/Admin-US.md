@@ -9,7 +9,7 @@ En tant qu’administrateur, je souhaite pouvoir éditer la page du catalogue af
 
 **Tâches :**
 * Synchro avec la base de données.
-* Ajout de page automatique et intuitif.
+* Ajout de page automatique et modification facile et intuitif.
 
 ***
 
@@ -24,6 +24,6 @@ En tant qu’administrateur, je souhaite pouvoir éditer les informations des cl
 
 **Tâches :**
 * Synchro avec la base de données.
-* Interface de modification des informations des clients.
+* Créer une Interface de modification des informations des clients.
 
 ***
