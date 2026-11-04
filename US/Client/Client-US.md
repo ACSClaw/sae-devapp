@@ -62,3 +62,37 @@ En tant que client, je veux consulter l'historique de mes commandes et leur stat
 
 - Créer la page de liste et le détail des commandes
 - Afficher le statut par état
+
+***
+
+## [US] - En tant que client, je veux pouvoir Créer un compte #5
+**Labels :** US, must
+
+**Description :**
+En tant que client, je veux créer un compte afin de pouvoir passer commande.
+
+**Critères d'acceptation :**
+* Possibilité pour un client de créer son compte sur le site web.
+* Champs obligatoires (Nom, prénom, Num, email…).
+
+**Tâches :**
+* Interface de création de compte.
+* Enregistrement dans la base de données.
+
+***
+
+## [US] - En tant que client, je veux pouvoir Profiter des réductions #6
+**Labels :** US, must
+
+**Description :**
+En tant que client je veux ajouter un pack au panier pour pouvoir profiter de la réduction sur les achats groupés.
+
+**Critères d'acceptation :**
+* Possibilité pour un client d’ajouter des packs dans un panier.
+* Appliquer les réductions si un pack est ajouté au panier.
+
+**Tâches :**
+* Interface de panier.
+* Affichage des réductions disponibles et appliquées.
+
+***
