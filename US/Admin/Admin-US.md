@@ -21,7 +21,7 @@ En tant qu'administrateur, je veux pouvoir ajouter, modifier ou supprimer un pro
 **Labels :** US, must
 
 **Description :**
-En tant qu'administrateur, je veux gérer la disponibilité d’un produit (manuellement ou via le stock) pour éviter les commandes impossibles.
+En tant qu'administrateur, je veux gérer la disponibilité d’un produit (manuellement ou via le stock) pour éviter les commandes impossibles avec les différents statuts suivants : Disponible / Réservé / Vendu (Réservé pendant le paiement, puis Vendu).
 
 **Critères d'acceptation :**
 - Synchronisation automatique avec le niveau de stock (passage en "Indisponible" si stock = 0).
