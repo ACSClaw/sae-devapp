@@ -142,3 +142,4 @@ En tant que client, je veux modifier le contenu de mon panier afin d'ajuster ma 
 - Créer la page « Mon panier » et l'affichage des lignes
 - Gérer la modification de quantité et la suppression d'un produit
 - Recalculer et afficher le total du panier
+- petite modif
