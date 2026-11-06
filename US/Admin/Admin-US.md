@@ -37,7 +37,7 @@ En tant qu'administrateur, je veux gérer la disponibilité d’un produit (manu
 ***
 
 ## [US] - En tant qu'administrateur, je veux créer, modifier ou supprimer des catégories et sous-catégories #3
-**Labels :** US, must
+**Labels :** US, Should
 
 **Description :**
 En tant qu'administrateur, je veux créer, modifier ou supprimer des catégories et sous-catégories pour structurer la navigation du catalogue.
@@ -53,7 +53,7 @@ En tant qu'administrateur, je veux créer, modifier ou supprimer des catégories
 ***
 
 ## [US] - En tant qu'administrateur, je veux pouvoir consulter et gérer les comptes clients #4
-**Labels :** US, must
+**Labels :** US, Should
 
 **Description :**
 En tant qu'administrateur, je veux pouvoir consulter et gérer les comptes clients pour assurer le support utilisateur.
