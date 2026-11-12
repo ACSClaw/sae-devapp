@@ -1,0 +1,6 @@
+{
+    "processeurs_total":3,
+    "ram_totale":16384,
+    "ids_processeur":["CPU_1","CPU_2","CPU_3"],
+    "energie_par_processeur":50
+}
