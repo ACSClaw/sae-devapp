@@ -1,7 +1,7 @@
 import sys
 import copy
 
-from gestion_fichiers import lire_config, lire_ressources, lire_csv
+from gestion_fichiers import lire_config, lire_json, lire_csv
 
 from algorithmes.fifo import ordonnancer_fifo
 from algorithmes.round_robin import round_robin
