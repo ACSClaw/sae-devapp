@@ -1,8 +1,8 @@
 fichier_ressources=ressources.json
 fichier_processus=processus.csv
 fichier_energie=energie.csv
-fichier_sortie_global=alocation_global.csv
-fichier_sortie_detaille=alocation_detaille.csv
-fichier_sortie_metriques=metriques.csv
-politiques_a_exec=FIFO
+fichier_sortie_global=Outputs/Test1/alocation_global.csv
+fichier_sortie_detaille=Outputs/Test1/alocation_detaille.csv
+fichier_sortie_metriques=Outputs/Test1/metriques.csv
+politiques_a_exec=FIFO,RR
 quantum=2
