@@ -155,28 +155,3 @@ def calculer_metriques(processus, energie, energie_consommee, makespan):
         "energie_disponible": energie_disponible,
         "taux_utilisation": energie_consommee / energie_disponible,
     }
-
-
-#python3 Code/algorithmes/round_robin.py
-if __name__ == "__main__":
-    import sys
-    sys.path.append("Code")
-    from gestion_fichiers import lire_csv, lire_json, lire_config
-
-    dossier = "Inputs/Test1/"
-    config = lire_config(dossier + "config.txt")
-    resultats = round_robin(
-        lire_csv(dossier + config["fichier_processus"]),
-        lire_json(dossier + config["fichier_ressources"]),
-        lire_csv(dossier + config["fichier_energie"]),
-        config["quantum"],
-    )
-
-    for ligne in resultats["global"]:
-        print(ligne)
-    for ligne in resultats["detaille"]:
-        print(ligne)
-    print(resultats["metriques"])
-
-    assert resultats["metriques"]["makespan"] == 14
-    assert resultats["metriques"]["energie_consommee"] == 1300
