@@ -3,7 +3,7 @@ import copy
 
 from gestion_fichiers import lire_config, lire_ressources, lire_csv
 
-from algorithmes.fifo import executer_fifo
+from algorithmes.fifo import ordonnancer_fifo
 from algorithmes.round_robin import round_robin
 
 def formater_donnees(liste_processus, liste_energie):
@@ -44,8 +44,8 @@ def main():
         processus_pour_algo = copy.deepcopy(liste_processus)
 
         if politique == "FIFO":
-            print("Simulation FIFO terminée.")
-
+            resultats = ordonnancer_fifo(liste_processus,ressources,liste_energie)
+            
         elif politique == "RR":
             resultats = round_robin(liste_processus,ressources,liste_energie,quantum)
 
