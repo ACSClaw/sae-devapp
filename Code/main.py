@@ -47,7 +47,7 @@ def main():
             print("Simulation FIFO terminée.")
 
         elif politique == "RR":
-            print(f"Simulation Round-Robin (q={quantum}) terminée.")
+            resultats = round_robin(liste_processus,ressources,liste_energie,quantum)
 
         else:
             print(f"Politique {politique} non reconnue.")
