@@ -1,7 +1,7 @@
 import sys
 import copy
 
-from gestion_fichiers import lire_config, lire_json, lire_csv
+from gestion_fichiers import lire_config, lire_json, lire_csv, sauvegarder_resultats
 
 from algorithmes.fifo import ordonnancer_fifo
 from algorithmes.round_robin import round_robin
@@ -35,7 +35,7 @@ def main():
     energie_brute = lire_csv(config['fichier_energie'])
     liste_processus, liste_energie = formater_donnees(processus_bruts, energie_brute)
 
-    politiques = config['politiques_a_executer'].split(',')
+    politiques = config['politiques_a_exec'].split(',')
     quantum = int(config.get('quantum'))
 
     for politique in politiques:
@@ -54,3 +54,5 @@ def main():
             continue
 
         sauvegarder_resultats(resultats, config, politique)
+
+main()

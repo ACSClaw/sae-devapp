@@ -1,6 +1,6 @@
-fichier_ressources=ressources.json
-fichier_processus=processus.csv
-fichier_energie=energie.csv
+fichier_ressources=Inputs/Test1/ressources.json
+fichier_processus=Inputs/Test1/processus.csv
+fichier_energie=Inputs/Test1/energie.csv
 fichier_sortie_global=Outputs/Test1/alocation_global.csv
 fichier_sortie_detaille=Outputs/Test1/alocation_detaille.csv
 fichier_sortie_metriques=Outputs/Test1/metriques.csv
