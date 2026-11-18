@@ -4,7 +4,7 @@ import copy
 from gestion_fichiers import lire_config, lire_ressources, lire_csv
 
 from algorithmes.fifo import executer_fifo
-from algorithmes.round_robin import executer_rr
+from algorithmes.round_robin import round_robin
 
 def formater_donnees(liste_processus, liste_energie):
     for p in liste_processus:
