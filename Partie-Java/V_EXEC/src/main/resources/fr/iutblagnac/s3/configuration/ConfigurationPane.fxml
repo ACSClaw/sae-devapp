@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<fx:root prefHeight="620.0" prefWidth="760.0" spacing="12.0" type="VBox" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+    <padding>
+        <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+    </padding>
+    <children>
+        <HBox spacing="5.0">
+            <children>
+                <Label style="-fx-font-weight: bold;" text="Configuration :" />
+                <Label fx:id="cheminConfig" style="-fx-font-weight: bold;" />
+            </children>
+        </HBox>
+        <GridPane hgap="10.0" vgap="8.0">
+            <columnConstraints>
+                <ColumnConstraints />
+                <ColumnConstraints hgrow="ALWAYS" />
+                <ColumnConstraints />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+            </rowConstraints>
+            <children>
+                <Label style="-fx-font-weight: bold; -fx-padding: 8 0 0 0;" text="Fichiers d'entrée" GridPane.columnSpan="3" GridPane.rowIndex="0" />
+                <Label minWidth="-Infinity" text="Ressources" GridPane.rowIndex="1" />
+                <TextField fx:id="ressources" accessibleText="Ressources" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <Button id="fichier_ressources" minWidth="-Infinity" mnemonicParsing="false" onAction="#parcourir" text="Parcourir…" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                <Label minWidth="-Infinity" text="Processus" GridPane.rowIndex="2" />
+                <TextField fx:id="processus" accessibleText="Processus" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <Button id="fichier_processus" minWidth="-Infinity" mnemonicParsing="false" onAction="#parcourir" text="Parcourir…" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                <Label minWidth="-Infinity" text="Énergie disponible" GridPane.rowIndex="3" />
+                <TextField fx:id="energie" accessibleText="Énergie disponible" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                <Button id="fichier_energie" minWidth="-Infinity" mnemonicParsing="false" onAction="#parcourir" text="Parcourir…" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                <Label style="-fx-font-weight: bold; -fx-padding: 8 0 0 0;" text="Fichiers de sortie (préfixés par l'algorithme, ex. FIFO_…)" GridPane.columnSpan="3" GridPane.rowIndex="4" />
+                <Label minWidth="-Infinity" text="Informations globales" GridPane.rowIndex="5" />
+                <TextField fx:id="sortieGlobal" accessibleText="Informations globales" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                <Button id="fichier_sortie_global" minWidth="-Infinity" mnemonicParsing="false" onAction="#parcourir" text="Parcourir…" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                <Label minWidth="-Infinity" text="Informations détaillées" GridPane.rowIndex="6" />
+                <TextField fx:id="sortieDetaille" accessibleText="Informations détaillées" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                <Button id="fichier_sortie_detaille" minWidth="-Infinity" mnemonicParsing="false" onAction="#parcourir" text="Parcourir…" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                <Label minWidth="-Infinity" text="Métriques (dont énergie)" GridPane.rowIndex="7" />
+                <TextField fx:id="sortieMetriques" accessibleText="Métriques (dont énergie)" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                <Button id="fichier_sortie_metriques" minWidth="-Infinity" mnemonicParsing="false" onAction="#parcourir" text="Parcourir…" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                <Label style="-fx-font-weight: bold; -fx-padding: 8 0 0 0;" text="Ordonnancement" GridPane.columnSpan="3" GridPane.rowIndex="8" />
+                <Label text="Algorithmes" GridPane.rowIndex="9" />
+                <HBox fx:id="politiques" spacing="12.0" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                    <children>
+                        <CheckBox mnemonicParsing="false" text="FIFO" />
+                        <CheckBox mnemonicParsing="false" text="RR" />
+                    </children>
+                </HBox>
+                <Label minWidth="-Infinity" text="Quantum (utilisé par RR)" GridPane.rowIndex="10" />
+                <TextField fx:id="quantum" accessibleText="Quantum" maxWidth="-Infinity" prefColumnCount="6" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+            </children>
+        </GridPane>
+        <HBox spacing="10.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#choisirConfig" text="Ouvrir…" />
+                <Button defaultButton="true" mnemonicParsing="false" onAction="#clicEnregistrer" text="Enregistrer" />
+                <Button mnemonicParsing="false" onAction="#clicEnregistrerSous" text="Enregistrer sous…" />
+            </children>
+        </HBox>
+        <StackPane alignment="TOP_LEFT">
+            <children>
+                <Label fx:id="succes" style="-fx-text-fill: #1b6e2f;" text="Configuration enregistrée." visible="false" />
+                <Label fx:id="erreur" style="-fx-text-fill: #b3261e;" wrapText="true" />
+            </children>
+        </StackPane>
+    </children>
+</fx:root>
